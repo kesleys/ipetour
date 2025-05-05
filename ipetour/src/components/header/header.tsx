@@ -1,12 +1,13 @@
 import "./header.css";
 import { Link } from "react-router-dom";
+import LogoIpetourOperadoraIcone from "../../assets/logo_ipetour_operadora_icone_header.png";
 
 export default function Header() {
   return (
     <header className="header">
       <div className="header_conteiner">
         <Link className="header_name" to="/">
-          <img src="src/assets/Logo_nome.png" alt="Logo Ipe Turismo" />
+          <img src={LogoIpetourOperadoraIcone} alt="Logo Ipe Turismo" />
         </Link>
         <Link className="header_button" to="/quem-somos">
           Quem somos

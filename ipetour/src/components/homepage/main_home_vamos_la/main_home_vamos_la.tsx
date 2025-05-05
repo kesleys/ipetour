@@ -1,4 +1,5 @@
 import "./main_home_vamos_la.css";
+import ImagemRioDeJaneiroVamosLaHomepage from "../../../assets/imagem_rio_de_janeiro_vamos_la_homepage.jpg";
 
 {
   /* Texto e imagens introdutórios */
@@ -28,8 +29,8 @@ export default function MainVamosLa() {
       <div className="quadrante_2_vamos_la">
         <img
           className="imagem_vamos_la"
-          src="src\assets\rio-janeiro.jpg"
-          alt="copa-cabana"
+          src={ImagemRioDeJaneiroVamosLaHomepage}
+          alt="copa cabana"
         />
       </div>
     </div>

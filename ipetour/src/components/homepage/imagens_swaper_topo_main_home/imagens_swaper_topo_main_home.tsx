@@ -4,16 +4,18 @@ import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import ImagemOfertasImperdiveis from "../../../assets/ofertas_imperdiveis_imagem_principal.jpg";
+import ImagemPacoteRioDeJaneiro from "../../../assets/pacote_rio_de_janeiro_ofertas_especiais.jpg";
 
 function ImagensTopoMainHome() {
   const imagensCarrossel = [
     {
       id: "ofertasImperdiveis",
-      image: "src/assets/ofertas_imperdiveis_imagem_principal.jpg",
+      image: ImagemOfertasImperdiveis,
     },
     {
       id: "ofertaRioDeJaneiro",
-      image: "src/assets/pacote_rio_de_janeiro_ofertas_especiais.jpg",
+      image: ImagemPacoteRioDeJaneiro,
     },
   ];
 

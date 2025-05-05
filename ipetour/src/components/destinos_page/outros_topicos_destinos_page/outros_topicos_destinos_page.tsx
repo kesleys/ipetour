@@ -1,17 +1,23 @@
 import "./outros_topicos_destinos_page.css";
+import ImagemQuaisVacinas from "../../../assets/quais_vacinas_tomar_antes.png";
+import ImagemQualMelhorEpocaViajar from "../../../assets/qual_a_melhor_epoca_pra_viajar.png";
 
 export default function OutrosTopicos() {
   return (
     <div className="outros_topicos_destinos_page">
       {" "}
-      <img
-        src="src/assets/quais_vacinas_tomar_antes.png"
-        alt="Quais vacinas devo tomar antes de viajar?"
-      />{" "}
-      <img
-        src="src/assets/qual_a_melhor_epoca_pra_viajar.png"
-        alt="Qual a melhor época para viajar para o exterior?"
-      />
+      <a href="">
+        <img
+          src={ImagemQuaisVacinas}
+          alt="Quais vacinas devo tomar antes de viajar?"
+        />
+      </a>
+      <a href="">
+        <img
+          src={ImagemQualMelhorEpocaViajar}
+          alt="Qual a melhor época para viajar para o exterior?"
+        />
+      </a>
       <div className="texto_outros_topicos_destinos_page">
         <h2>Outros tópicos</h2>
         <a href="" className="links_texto_outros_topicos_destinos_page">

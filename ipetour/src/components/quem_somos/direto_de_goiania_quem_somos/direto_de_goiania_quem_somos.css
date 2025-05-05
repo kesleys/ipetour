@@ -48,7 +48,6 @@
   width: 182px;
   height: 120px;
   transform: rotate(270deg);
-  background-image: url("src/assets/icone_de_aviao_encontre_perfeitos_destinos_page.png");
 }
 
 .icone_flor_laranja_direto_de_goiania_quem_somos {
@@ -57,5 +56,4 @@
   top: 0%;
   width: 210px;
   height: 220px;
-  background-image: url("src/assets/icone_flor_laranja_petalas_ipe.png");
 }

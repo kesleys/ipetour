@@ -59,7 +59,6 @@ footer {
   & .instagram_icone_footer {
     width: 71px;
     height: 71px;
-    background-image: url("src/assets/icone_instagram_footer.png");
   }
 
   & .whatsapp_icone_footer {

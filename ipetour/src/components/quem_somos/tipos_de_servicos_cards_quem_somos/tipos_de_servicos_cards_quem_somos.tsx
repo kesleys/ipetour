@@ -1,5 +1,9 @@
 import BotaoConverseComUmAgente from "../../botao_converse_com_um_agente/botao_converse_com_um_agente";
 import "./tipos_de_servicos_cards_quem_somos.css";
+import JanelaAviao from "../../../assets/imagem_janela_aviao_planos_internacionais_cards.jpg";
+import Mesquita from "../../../assets/imagem_mesquita_turismo_religioso_cards.jpg";
+import Motorista from "../../../assets/imagem_motorista_locadora_de_veiculos_cards.jpg";
+import QuartoHotel from "../../../assets/imagem_quarto_hotel_hotelaria_cards.jpg";
 
 export default function CardsTiposServicosQuemSomos() {
   return (
@@ -26,7 +30,7 @@ export default function CardsTiposServicosQuemSomos() {
           </div>
           <img
             className="imagem_cards_tipos_de_servicos_cards_quem_somos"
-            src="src/assets/imagem_mesquita_turismo_religioso_cards.jpg"
+            src={Mesquita}
             alt="Mesquita"
           />
         </div>
@@ -51,7 +55,7 @@ export default function CardsTiposServicosQuemSomos() {
           </div>
           <img
             className="imagem_cards_tipos_de_servicos_cards_quem_somos"
-            src="src/assets/imagem_motorista_locadora_de_veiculos_cards.jpg"
+            src={Motorista}
             alt="Motorista dirigindo carro"
           />
         </div>
@@ -76,7 +80,7 @@ export default function CardsTiposServicosQuemSomos() {
           </div>
           <img
             className="imagem_cards_tipos_de_servicos_cards_quem_somos"
-            src="src/assets/imagem_quarto_hotel_hotelaria_cards.jpg"
+            src={QuartoHotel}
             alt="Quarto de Hotel"
           />
         </div>
@@ -101,7 +105,7 @@ export default function CardsTiposServicosQuemSomos() {
           </div>
           <img
             className="imagem_cards_tipos_de_servicos_cards_quem_somos"
-            src="src/assets/imagem_janela_aviao_planos_internacionais_cards.jpg"
+            src={JanelaAviao}
             alt="Janela de Avião"
           />
         </div>

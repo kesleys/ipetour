@@ -1,4 +1,6 @@
 import "./footer.css";
+import InstagramIcon from "../../assets/icone_instagram_footer.png";
+import WhatsappIcon from "../../assets/icone_whatsapp_footer.png";
 
 export default function Footer() {
   return (
@@ -41,11 +43,13 @@ export default function Footer() {
             href="https://wa.me/556281872854"
             className="instagram_icone_footer"
             target="_blank"
+            style={{ backgroundImage: `url(${InstagramIcon})` }}
           ></a>
           <a
             href="https://wa.me/556281872854"
             className="whatsapp_icone_footer"
             target="_blank"
+            style={{ backgroundImage: `url(${WhatsappIcon})` }}
           ></a>
         </div>
       </div>

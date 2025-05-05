@@ -1,9 +1,14 @@
 import "./direto_de_goiania_quem_somos.css";
+import IconeAviaoAzulClaroRoxo from "../../../assets/icone_de_aviao_encontre_perfeitos_destinos_page.png";
+import PetalasFlorLaranja from "../../../assets/icone_flor_laranja_petalas_ipe.png";
 
 export default function DiretoDeGoiania() {
   return (
     <div className="direto_de_goiania_quem_somos">
-      <div className="aviao_icone_direto_de_goiania_quem_somos"></div>
+      <div
+        className="aviao_icone_direto_de_goiania_quem_somos"
+        style={{ backgroundImage: `url(${IconeAviaoAzulClaroRoxo})` }}
+      ></div>
       <p>
         <span className="ipeturismos_laranja_direto_de_goiania_quem_somos">
           Ipeturismo
@@ -15,7 +20,10 @@ export default function DiretoDeGoiania() {
         </span>
         !
       </p>
-      <div className="icone_flor_laranja_direto_de_goiania_quem_somos"></div>
+      <div
+        className="icone_flor_laranja_direto_de_goiania_quem_somos"
+        style={{ backgroundImage: `url(${PetalasFlorLaranja})` }}
+      ></div>
     </div>
   );
 }

@@ -1,9 +1,13 @@
 import "./nosso_compromisso_quem_somos.css";
+import IconeAviaoAzulClaroRoxo from "../../../assets/icone_de_aviao_encontre_perfeitos_destinos_page.png";
 
 export default function NossoCompromissoQuemSomos() {
   return (
     <div className="nosso_compromisso_quem_somos">
-      <div className="aviao_icone_nosso_compromisso_quem_somos"></div>
+      <div
+        className="aviao_icone_nosso_compromisso_quem_somos"
+        style={{ backgroundImage: `url(${IconeAviaoAzulClaroRoxo})` }}
+      ></div>
 
       <p className="tamanho_parágrafo_nosso_compromisso_quem_somos">
         Nosso{" "}

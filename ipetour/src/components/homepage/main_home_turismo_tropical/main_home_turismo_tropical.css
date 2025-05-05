@@ -14,8 +14,6 @@
   width: 580px;
   height: 520px;
   border-radius: var(--espaamento-5, 20px);
-  background: url(src/assets/imagem_main_home_turismo_tropical.jpg) lightgray
-    50% / cover no-repeat;
   box-shadow: 0px 4px 28.3px 10px rgba(132, 132, 132, 0.54);
 }
 

@@ -177,9 +177,6 @@
   border: 1px solid #1486c9;
   background: #fff;
 
-  & .disponibilidade_button_icon_cards_main_home {
-    background-image: url("src/assets/shopping-bag_hover.png");
-  }
   & .disponibilidade_button_text_cards_main_home {
     color: #1486c9;
   }
@@ -188,7 +185,6 @@
 .disponibilidade_button_icon_cards_main_home {
   width: 24px;
   height: 24px;
-  background-image: url("src/assets/shopping-bag.png");
 }
 
 .disponibilidade_button_text_cards_main_home {
