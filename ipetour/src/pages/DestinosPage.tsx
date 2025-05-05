@@ -7,8 +7,9 @@ import TurismoInternacionalDestinos from "../components/destinos_page/turismos_i
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
 import nuvemCeuAberto from "../assets/nuvem-ceu-aberto.jpg";
+import React from "react";
 
-const nuvemFundoStyle = {
+const nuvemFundoStyle: React.CSSProperties = {
   display: "flex",
   alignItems: "center",
   width: "1512px",
