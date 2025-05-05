@@ -1,24 +1,25 @@
 import "./header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <header className="header">
       <div className="header_conteiner">
-        <a className="header_name" href="/">
-          <img src="src\assets\Logo_nome.png" alt="Logo Ipe Turismo" />
-        </a>
-        <a className="header_button" href="/quem-somos">
+        <Link className="header_name" to="/">
+          <img src="src/assets/Logo_nome.png" alt="Logo Ipe Turismo" />
+        </Link>
+        <Link className="header_button" to="/quem-somos">
           Quem somos
-        </a>
-        <a className="header_button" href="/">
+        </Link>
+        <Link className="header_button" to="/">
           Serviços
-        </a>
-        <a className="header_button" href="/destinos">
+        </Link>
+        <Link className="header_button" to="/destinos">
           Destinos
-        </a>
-        <a className="header_button" href="/contato">
+        </Link>
+        <Link className="header_button" to="/contato">
           Contato
-        </a>
+        </Link>
       </div>
     </header>
   );
