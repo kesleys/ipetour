@@ -1,4 +1,5 @@
 import "./cards_home_main.css";
+import AviaoLogo from "../../../../assets/aviao_logo.png";
 
 export default function CardsHomeMain() {
   return (
@@ -8,7 +9,7 @@ export default function CardsHomeMain() {
         <div className="quina_colorida_cards_main_home"></div>
         <div className="topo_cards_main_home">
           <div className="fundo_aviao_cards_main_home">
-            <img src="src\assets\aviao-icon.png" alt="icone" />
+            <img src={AviaoLogo} alt="icone" />
           </div>
           {/* Editável: desconto */}
           <div className="por_cem_desconto_cards_main_home">15% off</div>
@@ -65,7 +66,7 @@ export default function CardsHomeMain() {
         <div className="quina_colorida_cards_main_home"></div>
         <div className="topo_cards_main_home">
           <div className="fundo_aviao_cards_main_home">
-            <img src="src\assets\aviao-icon.png" alt="icone" />
+            <img src={AviaoLogo} alt="icone" />
           </div>
           {/* Editável: desconto */}
           <div className="por_cem_desconto_cards_main_home">30% off</div>
@@ -121,7 +122,7 @@ export default function CardsHomeMain() {
         <div className="quina_colorida_cards_main_home"></div>
         <div className="topo_cards_main_home">
           <div className="fundo_aviao_cards_main_home">
-            <img src="src\assets\aviao-icon.png" alt="icone" />
+            <img src={AviaoLogo} alt="icone" />
           </div>
           {/* Editável: desconto */}
           <div className="por_cem_desconto_cards_main_home">15% off</div>
@@ -177,7 +178,7 @@ export default function CardsHomeMain() {
         <div className="quina_colorida_cards_main_home"></div>
         <div className="topo_cards_main_home">
           <div className="fundo_aviao_cards_main_home">
-            <img src="src\assets\aviao-icon.png" alt="icone" />
+            <img src={AviaoLogo} alt="icone" />
           </div>
           {/* Editável: desconto */}
           <div className="por_cem_desconto_cards_main_home">15% off</div>
@@ -233,7 +234,7 @@ export default function CardsHomeMain() {
         <div className="quina_colorida_cards_main_home"></div>
         <div className="topo_cards_main_home">
           <div className="fundo_aviao_cards_main_home">
-            <img src="src\assets\aviao-icon.png" alt="icone" />
+            <img src={AviaoLogo} alt="icone" />
           </div>
           {/* Editável: desconto */}
           <div className="por_cem_desconto_cards_main_home">15% off</div>

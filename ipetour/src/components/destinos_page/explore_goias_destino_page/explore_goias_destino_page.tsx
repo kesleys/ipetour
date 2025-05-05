@@ -1,4 +1,5 @@
 import "./explore_goias_destino_page.css";
+import CachoeiraGoias from "../../../assets/cachoeira_em_goias.png";
 
 export default function ExploreGoias() {
   return (
@@ -14,7 +15,7 @@ export default function ExploreGoias() {
         <a href="/">Saiba Mais</a>
       </div>{" "}
       <img
-        src="src/assets/cachoeira_em_goias.png"
+        src={CachoeiraGoias}
         alt="cachoeira em Goiás"
         className="imagem_explore_goias_destino_page"
       />

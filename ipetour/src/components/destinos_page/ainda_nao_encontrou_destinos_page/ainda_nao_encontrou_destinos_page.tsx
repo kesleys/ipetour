@@ -1,10 +1,11 @@
 import "./ainda_nao_encontrou_destinos_page.css";
+import AindaNaoEncontrou from "../../../../src/assets/ainda_nao_encontrou_imagem.png";
 
 export default function NaoEncontrouAinda() {
   return (
     <div className="ainda_nao_encontrou_destinos_page">
       <img
-        src="src/assets/ainda_nao_encontrou_imagem.png"
+        src={AindaNaoEncontrou}
         alt="cachoeira em Goiás"
         className="imagem_ainda_nao_encontrou_destinos_page"
       />
