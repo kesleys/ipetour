@@ -11,27 +11,13 @@
   text-decoration: none;
 }
 
-.botao_converse_com_um_agente:hover {
-  border: 1px solid #1486c9;
-  background: #fff;
-
-  & .icon_botao_converse_com_um_agente {
-    background-image: url("src/assets/shopping-bag_hover.png");
-  }
-  & .text_botao_converse_com_um_agente {
-    color: #1486c9;
-  }
-}
-
 .icon_botao_converse_com_um_agente {
   width: 24px;
   height: 24px;
-  background-image: url("src/assets/shopping-bag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .text_botao_converse_com_um_agente {
-  color: rgba(255, 255, 255, 0.95);
-
-  /* H5-Body-Large */
   font-size: var(--font-size-H6, 18px);
 }
