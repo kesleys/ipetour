@@ -1,0 +1,42 @@
+.imagens_topo_destinos_page {
+  display: flex;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+  width: 1200px;
+  height: 600px;
+}
+
+.imagens_slider_imagens_topo_destinos_page {
+  width: 1180px;
+  margin: auto;
+  display: block;
+  border-radius: 25px;
+}
+
+.swiper-pagination {
+  align-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+  height: 35px;
+  gap: 12px;
+}
+
+.swiper-pagination-bullet {
+  width: 26px !important;
+  height: 26px !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+  margin: auto;
+  background: #d9d9d9 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #191946 !important;
+}
+
+.swiper-pagination-bullet:hover {
+  transform: scale(1.1) !important;
+  background: #19194679;
+}

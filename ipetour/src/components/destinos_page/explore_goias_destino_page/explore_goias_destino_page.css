@@ -1,0 +1,41 @@
+.explore_goias_destino_page {
+  margin-top: 190px;
+  width: 1180px;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.texto_explore_goias_destino_page {
+  display: flex;
+  width: 485px;
+  height: 315px;
+  flex-direction: column;
+  gap: 35px;
+
+  & h1 {
+    color: var(--cards-cone-sec, #f2911b);
+    align-self: stretch;
+    /* H2-Large Title */
+    font-size: var(--font-size-H3, 48px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  & p {
+    color: var(--cards-texto-prim, #191946);
+    align-self: stretch;
+    /* H5-Body-Large */
+    font-size: var(--font-size-H6, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+  }
+  & a {
+    width: 100%;
+    text-decoration: none;
+    text-align: end;
+    color: #191946;
+  }
+}

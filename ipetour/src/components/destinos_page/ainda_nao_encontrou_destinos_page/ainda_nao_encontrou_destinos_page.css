@@ -1,0 +1,78 @@
+.ainda_nao_encontrou_destinos_page {
+  margin-top: 100px;
+  margin: auto;
+  width: 1230px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.texto_ainda_nao_encontrou_destinos_page {
+  display: flex;
+  width: 890px;
+  height: 300px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+
+  & h1 {
+    color: var(--cards-texto-prim, #191946);
+
+    /* H2-Large Title */
+    font-size: var(--font-size-H3, 48px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    & span {
+      color: var(--cards-cone-sec, #f2911b);
+
+      /* H2-Large Title */
+      font-size: var(--font-size-H3, 48px);
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+  }
+
+  & p {
+    color: var(--cards-texto-prim, #191946);
+
+    /* H5-Body-Large */
+    font-size: var(--font-size-H6, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+  }
+}
+
+.botao_converse_com_um_agente_ainda_nao_encontrou_destinos_page {
+  margin-top: 30px;
+  display: flex;
+  width: 287px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: #1486c9;
+  text-decoration: none;
+}
+
+.botao_converse_com_um_agente_ainda_nao_encontrou_destinos_page:hover {
+  border: 1px solid #1486c9;
+  background: #fff;
+
+  & .text_botao_converse_com_um_agente_ainda_nao_encontrou_destinos_page {
+    color: #1486c9;
+  }
+}
+
+.text_botao_converse_com_um_agente_ainda_nao_encontrou_destinos_page {
+  color: rgba(255, 255, 255, 0.95);
+
+  /* H5-Body-Large */
+  font-size: var(--font-size-H6, 20px);
+}

@@ -1,0 +1,70 @@
+footer {
+  display: flex;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 290px;
+  justify-content: center;
+  border-top: 3px solid #bdbdd4;
+}
+
+.conteudo_footer {
+  width: 1346px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.texto_footer {
+  display: flex;
+  gap: 200px;
+}
+
+.footer_infos {
+  display: flex;
+  width: 146px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  color: #000;
+
+  /* H4-Subtitle */
+  font-size: var(--font-size-H5, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer_topicos {
+  text-decoration: none;
+
+  color: #000;
+
+  /* H6-Body-strong */
+  font-size: var(--font-size-H7, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.redes_sociais_footer {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 50px;
+
+  & .instagram_icone_footer {
+    width: 71px;
+    height: 71px;
+    background-image: url("src/assets/icone_instagram_footer.png");
+  }
+
+  & .whatsapp_icone_footer {
+    width: 71px;
+    height: 71px;
+    background-image: url("src/assets/icone_whatsapp_footer.png");
+  }
+}

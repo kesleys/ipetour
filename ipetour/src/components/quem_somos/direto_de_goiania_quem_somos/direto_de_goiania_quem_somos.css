@@ -1,0 +1,61 @@
+.direto_de_goiania_quem_somos {
+  width: 1150px;
+  height: 265px;
+  margin-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--cards-texto-prim, #191946);
+  display: flex;
+  position: relative;
+  text-align: center;
+
+  /* H1-Display */
+  font-size: var(--font-size-H1, 60px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  & p {
+    margin-right: 0;
+    width: 840px;
+    height: 170px;
+    align-self: self-end;
+  }
+
+  & .ipeturismos_laranja_direto_de_goiania_quem_somos {
+    color: #f2911b;
+
+    /* H1-Display */
+    font-size: var(--font-size-H1, 60px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  & .o_mundo_azul_direto_de_goiania_quem_somos {
+    color: var(--cor-Azul-claro-normal, #1486c9);
+
+    /* H1-Display */
+    font-size: var(--font-size-H1, 60px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.aviao_icone_direto_de_goiania_quem_somos {
+  margin-top: 70px;
+  width: 182px;
+  height: 120px;
+  transform: rotate(270deg);
+  background-image: url("src/assets/icone_de_aviao_encontre_perfeitos_destinos_page.png");
+}
+
+.icone_flor_laranja_direto_de_goiania_quem_somos {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 210px;
+  height: 220px;
+  background-image: url("src/assets/icone_flor_laranja_petalas_ipe.png");
+}

@@ -1,0 +1,27 @@
+.main_home_nosso_compromisso {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1180px;
+  height: 165px;
+  color: var(--cards-texto-prim, #191946);
+
+  /* H1-Display */
+  font-size: var(--font-size-H1, 64px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tamanho_parágrafo_main_home_nosso_compromisso {
+  left: 0;
+  width: 1000px;
+}
+
+.compromisso_azul_main_home_nosso_compromisso {
+  color: var(--cards-cards-texto-title, #1486c9);
+}
+
+.sua_viagem_laranja_main_home_nosso_compromisso {
+  color: var(--cards-cone-sec, #f2911b);
+}

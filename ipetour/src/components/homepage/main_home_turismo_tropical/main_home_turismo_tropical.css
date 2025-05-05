@@ -1,0 +1,69 @@
+.main_home_turismo_tropical {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  margin-top: 60px;
+  width: 1160px;
+  height: 700px;
+  position: relative;
+  gap: 65px;
+}
+
+.imagem_main_home_turismo_tropical {
+  width: 580px;
+  height: 520px;
+  border-radius: var(--espaamento-5, 20px);
+  background: url(src/assets/imagem_main_home_turismo_tropical.jpg) lightgray
+    50% / cover no-repeat;
+  box-shadow: 0px 4px 28.3px 10px rgba(132, 132, 132, 0.54);
+}
+
+.texto_main_home_turismo_tropical {
+  width: 455px;
+  margin-top: 70px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--espaamento-8, 32px);
+  align-self: stretch;
+}
+
+.icon_flor_laranja_roxo_azul_main_home_turismo_tropical {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+h1#titulo_main_home_turismo_tropical {
+  width: 510px;
+  color: var(--cards-cone-sec, #f2911b);
+
+  /* H1-Display */
+  font-size: var(--font-size-H1, 64px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p#paragrafo_main_home_turismo_tropical {
+  color: var(--cards-texto-prim, #191946);
+
+  /* H4-Subtitle */
+  font-size: var(--font-size-H5, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+a#saiba_maismain_home_turismo_tropical {
+  color: var(--cards-texto-prim, #191946);
+
+  /* H4-Subtitle */
+  font-size: var(--font-size-H5, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
