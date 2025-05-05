@@ -9,11 +9,14 @@ import Header from "../components/header/header";
 import nuvemCeuAberto from "../assets/nuvem-ceu-aberto.jpg";
 
 const nuvemFundoStyle = {
+  display: "flex",
+  alignItems: "center",
   width: "1512px",
   height: "950px",
   margin: "auto",
   backgroundImage: `url(${nuvemCeuAberto})`,
   justifyItems: "center",
+  flexDirection: "column",
 };
 
 export default function DestinosPage() {
