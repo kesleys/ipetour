@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@types/swiper": "^6.0.0",
+    "axios": "^1.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-id-swiper": "^4.0.0",
