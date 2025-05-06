@@ -1,168 +1,154 @@
-import { useState } from "react";
-import axios from "axios";
+import { FC } from "react";
+import { useForm, Controller } from "react-hook-form";
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
+import "./contato_formulario.css";
+import type { ContactFormData } from "./contact.types";
 
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
-
-interface FormErrors {
-  name?: string;
-  email?: string;
-  message?: string;
-}
-
-export const ContactForm = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    message: "",
+export const ContactForm: FC = () => {
+  const {
+    control,
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<ContactFormData>({
+    mode: "onBlur", // validação ao perder foco para menos re-renders :contentReference[oaicite:4]{index=4}
+    reValidateMode: "onBlur",
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      isWhatsapp: false,
+      message: "",
+    },
   });
 
-  const [errors, setErrors] = useState<FormErrors>({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-
-  const validateForm = (): boolean => {
-    const newErrors: FormErrors = {};
-
-    if (!formData.name.trim()) {
-      newErrors.name = "Nome é obrigatório";
-    }
-
-    if (!formData.email) {
-      newErrors.email = "Email é obrigatório";
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email inválido";
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Mensagem é obrigatória";
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!validateForm()) return;
-
-    setIsSubmitting(true);
-
+  const onSubmit = async (data: ContactFormData) => {
     try {
-      // Substitua a URL pela sua API real
-      await axios.post("https://formspree.io/f/mbloobyq", formData);
-      setSubmitSuccess(true);
-      setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error("Erro ao enviar formulário:", error);
-      alert("Ocorreu um erro ao enviar a mensagem. Tente novamente.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-    // Limpa o erro quando o usuário começa a digitar
-    if (errors[name as keyof FormErrors]) {
-      setErrors((prev) => ({ ...prev, [name]: undefined }));
+      await fetch("https://formspree.io/f/mbloobyq", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      alert("Mensagem enviada com sucesso!");
+    } catch {
+      alert("Erro ao enviar. Tente novamente.");
     }
   };
 
   return (
-    <div style={{ maxWidth: "600px", margin: "200px auto", padding: "20px" }}>
-      <h2>Fale Conosco!</h2>
+    <form
+      className="contato_formulario"
+      onSubmit={handleSubmit(onSubmit)}
+      aria-labelledby="contact-form-title"
+      role="form"
+    >
+      {/* Nome */}
+      <div className="campo_nome_contato_formulario">
+        <input
+          id="name"
+          type="text"
+          placeholder="Nome"
+          {...register("name", { required: "*obrigatório" })}
+          disabled={isSubmitting}
+        />
+        {errors.name && (
+          <span className="mensagem_de_erro_contato_formulario">
+            {errors.name.message}
+          </span>
+        )}
+      </div>
 
-      {submitSuccess ? (
-        <div style={{ color: "green", margin: "20px 0" }}>
-          Mensagem enviada com sucesso! Entraremos em contato em breve.
-        </div>
-      ) : (
-        <form
-          onSubmit={handleSubmit}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "15px",
-            margin: "60px auto",
-          }}
-        >
-          <div>
-            <label htmlFor="name">Nome:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              disabled={isSubmitting}
-              style={{ width: "100%", padding: "8px" }}
+      <div>
+        <div className="telefone_e_email_contato_formulario">
+          {/* Telefone */}
+          <div className="campo_telefone_contato_formulario">
+            <Controller
+              name="phone"
+              control={control}
+              rules={{
+                required: "Telefone é obrigatório",
+                validate: (value) =>
+                  isValidPhoneNumber(value || "") || "Telefone inválido",
+              }}
+              render={({ field: { onChange, value } }) => (
+                <PhoneInput
+                  id="phone"
+                  international
+                  defaultCountry="BR"
+                  value={value}
+                  onChange={onChange}
+                  disabled={isSubmitting}
+                  placeholder="Número de Telefone"
+                />
+              )}
             />
-            {errors.name && (
-              <span style={{ color: "red", fontSize: "0.9em" }}>
-                {errors.name}
+            {errors.phone && (
+              <span className="mensagem_de_erro_contato_formulario">
+                {errors.phone.message}
               </span>
             )}
           </div>
-
-          <div>
-            <label htmlFor="email">Email:</label>
+          {/* E-mail */}
+          <div className="campo_email_contato_formulario">
             <input
-              type="email"
               id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
+              type="email"
+              placeholder="Email"
+              {...register("email", {
+                required: "Email é obrigatório",
+                pattern: {
+                  value: /^\S+@\S+\.\S+$/i,
+                  message: "Formato de email inválido",
+                },
+              })}
               disabled={isSubmitting}
-              style={{ width: "100%", padding: "8px" }}
             />
             {errors.email && (
-              <span style={{ color: "red", fontSize: "0.9em" }}>
-                {errors.email}
+              <span className="mensagem_de_erro_contato_formulario">
+                {errors.email.message}
               </span>
             )}
           </div>
-
-          <div>
-            <label htmlFor="message">Mensagem:</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
+        </div>
+        {/* WhatsApp */}
+        <div className="numero_de_whatsapp_checkbox_contato_formulario">
+          <label htmlFor="isWhatsapp">
+            <input
+              id="isWhatsapp"
+              type="checkbox"
+              {...register("isWhatsapp")}
               disabled={isSubmitting}
-              style={{ width: "100%", padding: "8px", minHeight: "150px" }}
             />
-            {errors.message && (
-              <span style={{ color: "red", fontSize: "0.9em" }}>
-                {errors.message}
-              </span>
-            )}
-          </div>
+            Este número é WhatsApp?
+          </label>
+        </div>
+      </div>
 
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            style={{
-              padding: "10px 20px",
-              backgroundColor: isSubmitting ? "#ccc" : "#007bff",
-              color: "white",
-              border: "none",
-              borderRadius: "4px",
-              cursor: "pointer",
-            }}
-          >
-            {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
-          </button>
-        </form>
-      )}
-    </div>
+      {/* Mensagem */}
+      <div className="campo_mensagem_contato_formulario">
+        <textarea
+          id="message"
+          rows={4}
+          {...register("message", { required: "Mensagem é obrigatória" })}
+          disabled={isSubmitting}
+          placeholder="Gostaria de saber mais sobre..."
+        />
+        {errors.message && (
+          <span className="mensagem_de_erro_contato_formulario">
+            {errors.message.message}
+          </span>
+        )}
+      </div>
+
+      {/* Botão de Envio */}
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="botao_enviar_contato_formulario"
+      >
+        {isSubmitting ? "Enviando..." : "Enviar"}
+      </button>
+    </form>
   );
 };
