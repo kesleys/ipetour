@@ -1,0 +1,52 @@
+.fale_conosco_contato_page {
+  margin-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 1130px;
+  gap: 40px;
+  height: 270px;
+  color: var(--cards-texto-prim, #191946);
+  align-items: center;
+
+  /* H1-Display */
+  font-size: var(--font-size-H1, 64px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tamanho_paragrafo_fale_conosco_contato_page {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  width: 720px;
+
+  & h1 {
+    color: #1486c9;
+    text-align: center;
+
+    /* H1-Display */
+    font-size: var(--font-size-H1, 68px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  & p {
+    margin-top: 10px;
+    color: #293872;
+    text-align: center;
+
+    /* H4-Subtitle */
+    font-size: var(--font-size-H5, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.aviao_icone_nosso_compromisso_quem_somos {
+  width: 182px;
+  height: 120px;
+}

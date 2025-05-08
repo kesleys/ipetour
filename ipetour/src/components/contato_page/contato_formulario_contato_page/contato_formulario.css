@@ -1,6 +1,8 @@
 .limite_contato_formulario_contato_page {
   display: flex;
-  margin: 200px auto;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
   gap: 25px;
   width: 1130px;
   height: 530px;

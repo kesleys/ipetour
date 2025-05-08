@@ -1,0 +1,58 @@
+.encontre_nos_contato_page {
+  width: 1030px;
+  height: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+  align-items: end;
+  justify-content: end;
+}
+
+.texto_encontre_nos_contato_page {
+  display: flex;
+  bottom: 0;
+
+  & p {
+    width: 980px;
+    height: 120px;
+    align-self: self-start;
+    color: var(--cards-texto-prim, #191946);
+    text-align: center;
+
+    /* H2-Large Title */
+    font-size: var(--font-size-H3, 48px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  & .viagem_azul_encontre_nos_contato_page {
+    color: var(--cards-cards-texto-title, #1486c9);
+
+    /* H2-Large Title */
+    font-size: var(--font-size-H3, 48px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  & .a_gente_laranja_encontre_nos_contato_page {
+    color: var(--cards-cone-sec, #f2911b);
+
+    /* H2-Large Title */
+    font-size: var(--font-size-H3, 48px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+}
+
+.icone_flor_laranja_encontre_nos_contato_page {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 210px;
+  height: 220px;
+  transform: rotate(270deg);
+}

@@ -9,7 +9,7 @@ export default function NossoCompromissoQuemSomos() {
         style={{ backgroundImage: `url(${IconeAviaoAzulClaroRoxo})` }}
       ></div>
 
-      <p className="tamanho_parágrafo_nosso_compromisso_quem_somos">
+      <p className="tamanho_paragrafo_nosso_compromisso_quem_somos">
         Nosso{" "}
         <span className="compromisso_azul_nosso_compromisso_quem_somos">
           {" "}

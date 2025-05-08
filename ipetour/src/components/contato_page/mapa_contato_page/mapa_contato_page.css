@@ -2,12 +2,14 @@
   position: relative;
   height: 1040px;
   width: 100%;
+  margin-top: 100px;
 }
 
 .limite_mapa_contato_page {
   z-index: 1;
   display: flex;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 1125px;
   height: 580px;
   position: relative;
@@ -15,7 +17,6 @@
 
 .mapa_contato_page {
   display: flex;
-  margin: auto;
   width: 1125px;
   height: 580px;
   flex-direction: column;
