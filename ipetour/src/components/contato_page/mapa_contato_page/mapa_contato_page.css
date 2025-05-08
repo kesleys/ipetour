@@ -38,6 +38,65 @@
   border-left-style: solid;
 }
 
+.endereco_e_telefone_contato_page {
+  display: flex;
+  width: 1130px;
+  height: 165px;
+  z-index: 1;
+  margin: 40px auto;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+
+  & h4 {
+    color: #1486c9;
+
+    /* H3-Title */
+    font-size: var(--font-size-H4, 32px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  & p {
+    color: var(--cards-texto-prim, #191946);
+
+    /* H4-Subtitle */
+    font-size: var(--font-size-H5, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.endereco_contato_page {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 545px;
+  height: 165px;
+  padding: 32px var(--spacing-sistem-spacing-xl, 24px);
+  align-items: flex-start;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  gap: 20px;
+}
+
+.telefone_contato_page {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 545px;
+  height: 165px;
+  padding: 32px var(--spacing-sistem-spacing-xl, 24px);
+  align-items: flex-start;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  gap: 20px;
+}
+
 .fundo_cinza_mapa_contato_page {
   background-color: #eaeaf1;
   bottom: 0;

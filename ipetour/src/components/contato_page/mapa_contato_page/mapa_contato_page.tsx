@@ -1,4 +1,6 @@
 import "./mapa_contato_page.css";
+import IconeTelefoneContatoPage from "../../../assets/icone_telefone_mapa_contato_page.png";
+import IconePinoContatoPage from "../../../assets/icone_pino_mapa_contato_page.png";
 
 export default function MapaContatoPage() {
   return (
@@ -17,7 +19,24 @@ export default function MapaContatoPage() {
         ></iframe>
         <div className="quina_colorida_mapa_contato_page"></div>
       </div>
-      <div className="endereco_e_telefone_contato_page"></div>
+      <div className="endereco_e_telefone_contato_page">
+        <div className="telefone_contato_page">
+          <img src={IconePinoContatoPage} alt="" />
+          <div>
+            <h4>Endereço</h4>{" "}
+            <p>Av. Nero Macedo, 400 - Cidade Jardim, Goiânia - GO, 74423-250</p>
+          </div>
+        </div>
+        <div className="telefone_contato_page">
+          <img src={IconeTelefoneContatoPage} alt="" />
+          <div>
+            <h4>Telefone</h4>{" "}
+            <p>
+              Watssapp: (62) 98658-8511 <br /> Fixo: (62) 3845-2944
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
