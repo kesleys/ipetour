@@ -1,7 +1,20 @@
+.limite_contato_formulario_contato_page {
+  display: flex;
+  margin: 200px auto;
+  gap: 25px;
+  width: 1130px;
+  height: 530px;
+}
+
+.imagem_contato_formulário_contato_page {
+  display: flex;
+  width: 552px;
+  height: 462px;
+}
+
 .contato_formulario {
   width: 550px;
-  height: 550px;
-  margin: 200px auto;
+  height: 520px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -116,11 +129,11 @@
   display: flex;
   flex-direction: column;
   width: 550px;
-  height: 335px;
+  height: 305px;
 
   & textarea {
     width: 100%px;
-    height: 320px;
+    height: 290px;
     align-items: flex-start;
     resize: none;
     overflow: auto;
@@ -164,6 +177,7 @@
   border: 1px solid #fff;
   background: #1486c9;
   transition: background-color 0.4s ease;
+  align-self: end;
 
   /* H5-Body-Large */
   font-size: var(--font-size-H6, 20px);

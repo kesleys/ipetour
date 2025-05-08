@@ -1,0 +1,49 @@
+.mapa_endereco_e_telefone_mapa_contato_page {
+  position: relative;
+  height: 1040px;
+  width: 100%;
+}
+
+.limite_mapa_contato_page {
+  z-index: 1;
+  display: flex;
+  margin: auto;
+  width: 1125px;
+  height: 580px;
+  position: relative;
+}
+
+.mapa_contato_page {
+  display: flex;
+  margin: auto;
+  width: 1125px;
+  height: 580px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 20px;
+  box-shadow: 0px 4px 27.9px 3px rgba(0, 0, 0, 0.25);
+}
+
+.quina_colorida_mapa_contato_page {
+  top: 0;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-top-left-radius: 20px;
+  border-top-color: #f2911b;
+  border-top-style: solid;
+  border-left-color: #f2911b;
+  border-left-style: solid;
+}
+
+.fundo_cinza_mapa_contato_page {
+  background-color: #eaeaf1;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  z-index: 0;
+  height: 750px;
+  width: 100%;
+}

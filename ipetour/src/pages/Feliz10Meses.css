@@ -1,0 +1,74 @@
+.congrats-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sunflower background image and subtle animation */
+.sunflower-bg {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotateSunflowers 500s linear infinite;
+}
+
+.sunflower-img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes rotateSunflowers {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Overlay message styling */
+.message-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.big-message {
+  font-size: 70px;
+  color: #d97706;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  background-color: #201b1779;
+  border-radius: 30px;
+}
+
+.subtext {
+  font-size: 60px;
+  color: #228b22;
+  background-color: #201b1779;
+  border-radius: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .big-message {
+    font-size: 2.5rem;
+  }
+  .subtext {
+    font-size: 1.2rem;
+  }
+}
