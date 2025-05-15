@@ -30,13 +30,14 @@
   background-color: #f0f1f5;
 }
 
-.roll_limit_cards_main_home_cards {
+.limite_cards__ofestas_homepage {
   width: 1119px;
-  height: calc(var(--largura-card) / 0.5999339805825243);
+  height: 555px;
   display: flex;
-  align-items: center;
-  scrollbar-width: none;
+  flex-wrap: nowrap;
   overflow-x: auto;
-  border-radius: 20px;
-  gap: 28px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  gap: 40px;
+  border-radius: 30px;
 }

@@ -1,0 +1,175 @@
+.card_homepage {
+  width: 317px;
+  height: 515px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: transform 0.2s ease;
+}
+.card_homepage:hover {
+  transform: translateY(-4px);
+}
+
+.quina_colorida_cards_homepage {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  border-top-left-radius: 20px;
+  border-top-color: #1486c9;
+  border-top-style: solid;
+  border-left-color: #1486c9;
+  border-left-style: solid;
+}
+
+.topo_cards_homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.fundo_icone_aviao_cards_homepage {
+  --diametro-fundo: 70px;
+  width: var(--diametro-fundo);
+  height: var(--diametro-fundo);
+  background-color: #eaeaf1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desconto_percentual_cards_homepage {
+  display: grid;
+  width: 102px;
+  height: 40px;
+  background-color: #40ac3a;
+  color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.rota_cards_homepage {
+  padding: 0 1rem;
+}
+.partida_cards_homepage {
+  color: var(--cards-texto-sec, #2a2a74);
+
+  /* H4-Subtitle */
+  font-size: var(--font-size-H5, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.chegada_cards_homepage {
+  color: var(--cards-texto-prim, #191946);
+
+  /* H3-Title */
+  font-size: var(--font-size-H4, 32px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.tracejado_cards_homepage {
+  margin: 8px 0;
+  border-bottom: 2px dashed rgba(142, 152, 168, 0.38);
+}
+
+.info_hotel_cards_homepage {
+  padding: 0 1rem;
+  flex-grow: 1;
+  height: 235px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info_hotel_cards_homepage h4 {
+  color: var(--cards-cards-texto-title, #1486c9);
+
+  /* H4-Subtitle */
+  font-size: var(--font-size-H5, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.info_hotel_cards_homepage img {
+  width: 285px;
+  height: 110px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  border-radius: 20px;
+  object-fit: cover;
+}
+.info_hotel_cards_homepage p {
+  color: var(--cards-texto-sec, #2a2a74);
+
+  /* pf-Body */
+  font-size: var(--font-size-pf, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.5rem;
+}
+.precos_cards_homepage {
+  display: flex;
+}
+.preco_atual_cards_homepage {
+  color: var(--cards-texto-prim, #191946);
+
+  /* H3-Title */
+  font-size: var(--font-size-H4, 32px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 8px;
+}
+.preco_antigo_cards_homepage {
+  color: var(--cards-cone-sec, #f2911b);
+  font-size: var(--font-size-pf, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+  align-self: flex-end;
+}
+
+.botao_disponibilidade_cards_homepage {
+  display: flex;
+  width: 287px;
+  height: 56px;
+  padding: 12px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: #1486c9;
+  text-decoration: none;
+  align-self: center;
+  align-items: center;
+  margin: 1rem;
+  transition: background 0.2s, border 0.2s;
+}
+.botao_disponibilidade_cards_homepage:hover {
+  border: 1px solid #1486c9;
+  background: #fff;
+}
+.botao_disponibilidade_cards_homepage:hover
+  .texto_botao_disponibilidade_cards_homepage {
+  color: #1486c9;
+}
+.icone_botao_disponibilidade_cards_homepage {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+}
+.texto_botao_disponibilidade_cards_homepage {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 20px;
+  font-weight: 400;
+}
