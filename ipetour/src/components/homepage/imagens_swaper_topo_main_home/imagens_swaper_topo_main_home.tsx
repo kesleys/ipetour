@@ -4,8 +4,8 @@ import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import ImagemOfertasImperdiveis from "../../../assets/ofertas_imperdiveis_imagem_principal.jpg";
-import ImagemPacoteRioDeJaneiro from "../../../assets/pacote_rio_de_janeiro_ofertas_especiais.jpg";
+import ImagemOfertasImperdiveis from "../../../assets/ofertas_imperdiveis_imagem_principal.webp";
+import ImagemPacoteRioDeJaneiro from "../../../assets/pacote_rio_de_janeiro_ofertas_especiais.webp";
 
 function ImagensTopoMainHome() {
   const imagensCarrossel = [

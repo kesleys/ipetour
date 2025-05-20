@@ -1,5 +1,5 @@
 import "./explore_goias_destino_page.css";
-import CachoeiraGoias from "../../../assets/cachoeira_em_goias.png";
+import CachoeiraGoias from "../../../assets/cachoeira_em_goias.webp";
 
 export default function ExploreGoias() {
   return (

@@ -1,9 +1,9 @@
 import BotaoConverseComUmAgente from "../../botao_converse_com_um_agente/botao_converse_com_um_agente";
 import "./tipos_de_servicos_cards_quem_somos.css";
-import JanelaAviao from "../../../assets/imagem_janela_aviao_planos_internacionais_cards.jpg";
-import Mesquita from "../../../assets/imagem_mesquita_turismo_religioso_cards.jpg";
-import Motorista from "../../../assets/imagem_motorista_locadora_de_veiculos_cards.jpg";
-import QuartoHotel from "../../../assets/imagem_quarto_hotel_hotelaria_cards.jpg";
+import JanelaAviao from "../../../assets/imagem_janela_aviao_planos_internacionais_cards.webp";
+import Mesquita from "../../../assets/imagem_mesquita_turismo_religioso_cards.webp";
+import Motorista from "../../../assets/imagem_motorista_locadora_de_veiculos_cards.webp";
+import QuartoHotel from "../../../assets/imagem_quarto_hotel_hotelaria_cards.webp";
 
 export default function CardsTiposServicosQuemSomos() {
   return (

@@ -4,7 +4,7 @@ import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import "./contato_formulario.css";
 import type { ContactFormData } from "./contact.types";
-import ImagemMachuPicchu from "../../../assets/imagem_machu_picchu_contato_page.jpg";
+import ImagemMachuPicchu from "../../../assets/imagem_machu_picchu_contato_page.webp";
 
 export const ContactForm: FC = () => {
   const {

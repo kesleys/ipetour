@@ -64,6 +64,6 @@ footer {
   & .whatsapp_icone_footer {
     width: 71px;
     height: 71px;
-    background-image: url("src/assets/icone_whatsapp_footer.png");
+    background-image: url("src/assets/icone_whatsapp_footer.webp");
   }
 }

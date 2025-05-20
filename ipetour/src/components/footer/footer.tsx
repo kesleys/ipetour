@@ -1,6 +1,6 @@
 import "./footer.css";
-import InstagramIcon from "../../assets/icone_instagram_footer.png";
-import WhatsappIcon from "../../assets/icone_whatsapp_footer.png";
+import InstagramIcon from "../../assets/icone_instagram_footer.webp";
+import WhatsappIcon from "../../assets/icone_whatsapp_footer.webp";
 
 export default function Footer() {
   return (

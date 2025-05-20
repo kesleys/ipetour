@@ -1,6 +1,6 @@
 import "./outros_topicos_destinos_page.css";
-import ImagemQuaisVacinas from "../../../assets/quais_vacinas_tomar_antes.png";
-import ImagemQualMelhorEpocaViajar from "../../../assets/qual_a_melhor_epoca_pra_viajar.png";
+import ImagemQuaisVacinas from "../../../assets/quais_vacinas_tomar_antes.webp";
+import ImagemQualMelhorEpocaViajar from "../../../assets/qual_a_melhor_epoca_pra_viajar.webp";
 
 export default function OutrosTopicos() {
   return (

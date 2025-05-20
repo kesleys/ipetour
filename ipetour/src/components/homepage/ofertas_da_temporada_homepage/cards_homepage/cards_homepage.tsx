@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import type { CardInfo } from "./cards";
-import AviaoLogo from "../../../../assets/aviao_logo.png";
-import Sacola from "../../../../assets/shopping-bag.png";
-import SacolaHover from "../../../../assets/shopping-bag_hover.png";
+import AviaoLogo from "../../../../assets/aviao_logo.webp";
+import Sacola from "../../../../assets/shopping-bag.webp";
+import SacolaHover from "../../../../assets/shopping-bag_hover.webp";
 import "./cards_homepage.css";
 
 export const Card: React.FC<CardInfo> = ({

@@ -1,5 +1,5 @@
 import "./imagem_paisagem_quem_somos.css";
-import PaisagemQuemSomos from "../../../assets/imagem_paisagem_quem_somos.jpg";
+import PaisagemQuemSomos from "../../../assets/imagem_paisagem_quem_somos.webp";
 
 export default function ImagemPaisagemQuemSomos() {
   return (

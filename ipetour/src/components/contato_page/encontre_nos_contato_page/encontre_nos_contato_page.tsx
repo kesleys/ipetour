@@ -1,5 +1,5 @@
 import "./encontre_nos_contato_page.css";
-import PetalasFlorLaranja from "../../../assets/icone_flor_laranja_petalas_ipe.png";
+import PetalasFlorLaranja from "../../../assets/icone_flor_laranja_petalas_ipe.webp";
 
 export default function EncontreNosContatoPage() {
   return (

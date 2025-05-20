@@ -1,5 +1,5 @@
-import HotelCardumas from "../../../../assets/hotel_cardumas.png";
-import HotelSaoPaulo from "../../../../assets/imagem_sao_paulo_cards_homepage.png";
+import HotelCardumas from "../../../../assets/hotel_cardumas.webp";
+import HotelSaoPaulo from "../../../../assets/imagem_sao_paulo_cards_homepage.webp";
 
 export interface CardInfo {
   id: string;

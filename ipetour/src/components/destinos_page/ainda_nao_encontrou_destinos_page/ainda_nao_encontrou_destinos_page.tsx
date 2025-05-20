@@ -1,5 +1,5 @@
 import "./ainda_nao_encontrou_destinos_page.css";
-import AindaNaoEncontrou from "../../../../src/assets/ainda_nao_encontrou_imagem.png";
+import AindaNaoEncontrou from "../../../../src/assets/ainda_nao_encontrou_imagem.webp";
 
 export default function NaoEncontrouAinda() {
   return (

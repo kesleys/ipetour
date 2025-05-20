@@ -1,5 +1,5 @@
 import "./main_home_vamos_la.css";
-import ImagemRioDeJaneiroVamosLaHomepage from "../../../assets/imagem_rio_de_janeiro_vamos_la_homepage.jpg";
+import ImagemRioDeJaneiroVamosLaHomepage from "../../../assets/imagem_rio_de_janeiro_vamos_la_homepage.webp";
 
 {
   /* Texto e imagens introdutórios */

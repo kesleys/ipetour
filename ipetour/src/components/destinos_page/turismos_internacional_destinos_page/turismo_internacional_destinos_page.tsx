@@ -1,5 +1,5 @@
 import "./turismo_internacional_destinos_page.css";
-import ImagemTurismoInternacionalGarotoCachorro from "../../../assets/imagem_turismo_internacional_garoto_viagens_Mesa_de_trabajo.jpg";
+import ImagemTurismoInternacionalGarotoCachorro from "../../../assets/imagem_turismo_internacional_garoto_viagens_Mesa_de_trabajo.webp";
 
 export default function TurismoInternacionalDestinos() {
   return (

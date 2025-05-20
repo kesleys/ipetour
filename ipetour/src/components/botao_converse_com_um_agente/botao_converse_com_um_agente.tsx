@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./botao_converse_com_um_agente.css";
-import ShoppingBag from "../../assets/shopping-bag.png";
-import ShoppingBagHover from "../../assets/shopping-bag_hover.png";
+import ShoppingBag from "../../assets/shopping-bag.webp";
+import ShoppingBagHover from "../../assets/shopping-bag_hover.webp";
 
 export default function BotaoConverseComUmAgente() {
   const [hovered, setHovered] = useState(false);

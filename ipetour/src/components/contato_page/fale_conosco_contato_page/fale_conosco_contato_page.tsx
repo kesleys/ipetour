@@ -1,5 +1,5 @@
 import "./fale_conosco_contato_page.css";
-import IconeAviaoAzulClaroRoxo from "../../../assets/icone_de_aviao_encontre_perfeitos_destinos_page.png";
+import IconeAviaoAzulClaroRoxo from "../../../assets/icone_de_aviao_encontre_perfeitos_destinos_page.webp";
 
 export default function FaleConoscoContatoPage() {
   return (

@@ -1,6 +1,6 @@
 import "./mapa_contato_page.css";
-import IconeTelefoneContatoPage from "../../../assets/icone_telefone_mapa_contato_page.png";
-import IconePinoContatoPage from "../../../assets/icone_pino_mapa_contato_page.png";
+import IconeTelefoneContatoPage from "../../../assets/icone_telefone_mapa_contato_page.webp";
+import IconePinoContatoPage from "../../../assets/icone_pino_mapa_contato_page.webp";
 
 export default function MapaContatoPage() {
   return (

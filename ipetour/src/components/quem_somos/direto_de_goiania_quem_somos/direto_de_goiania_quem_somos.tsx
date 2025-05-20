@@ -1,6 +1,6 @@
 import "./direto_de_goiania_quem_somos.css";
-import IconeAviaoAzulClaroRoxo from "../../../assets/icone_de_aviao_encontre_perfeitos_destinos_page.png";
-import PetalasFlorLaranja from "../../../assets/icone_flor_laranja_petalas_ipe.png";
+import IconeAviaoAzulClaroRoxo from "../../../assets/icone_de_aviao_encontre_perfeitos_destinos_page.webp";
+import PetalasFlorLaranja from "../../../assets/icone_flor_laranja_petalas_ipe.webp";
 
 export default function DiretoDeGoiania() {
   return (

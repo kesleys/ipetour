@@ -1,5 +1,5 @@
 import "./sua_viagem_sem_complicacoes_quem_somos.css";
-import ImagemViagemSemComplicacoesCasal from "../../../assets/imagem_turistas_sua_viagem_sem_complicacoes.jpg";
+import ImagemViagemSemComplicacoesCasal from "../../../assets/imagem_turistas_sua_viagem_sem_complicacoes.webp";
 
 export default function SuaViagemSemComplicacoes() {
   return (

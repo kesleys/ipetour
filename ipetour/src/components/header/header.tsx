@@ -1,6 +1,6 @@
 import "./header.css";
 import { Link } from "react-router-dom";
-import LogoIpetourOperadoraIcone from "../../assets/logo_ipetour_operadora_icone_header.png";
+import LogoIpetourOperadoraIcone from "../../assets/logo_ipetour_operadora_icone_header.webp";
 
 export default function Header() {
   return (

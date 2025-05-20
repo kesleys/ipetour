@@ -6,7 +6,7 @@ import OutrosTopicos from "../components/destinos_page/outros_topicos_destinos_p
 import TurismoInternacionalDestinos from "../components/destinos_page/turismos_internacional_destinos_page/turismo_internacional_destinos_page";
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
-import nuvemCeuAberto from "../assets/nuvem-ceu-aberto.jpg";
+import nuvemCeuAberto from "../assets/nuvem-ceu-aberto.webp";
 import React from "react";
 
 const nuvemFundoStyle: React.CSSProperties = {

@@ -1,6 +1,6 @@
 import "./main_home_turismo_tropical.css";
-import IconeFlorLaranRoxoAzul from "../../../assets/icon-flor-laranja-roxo-azul.png";
-import ImagemTurismoTropical from "../../../assets/imagem_main_home_turismo_tropical.jpg";
+import IconeFlorLaranRoxoAzul from "../../../assets/icon-flor-laranja-roxo-azul.webp";
+import ImagemTurismoTropical from "../../../assets/imagem_main_home_turismo_tropical.webp";
 
 export default function MainHomeTurismoTropical() {
   return (

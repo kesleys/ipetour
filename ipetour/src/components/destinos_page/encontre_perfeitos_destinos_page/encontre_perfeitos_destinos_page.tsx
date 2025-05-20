@@ -1,6 +1,6 @@
 import "./encontre_perfeitos_destinos_page.css";
-import IconeAviaoAzulClaroRoxo from "../../../assets/icone_de_aviao_encontre_perfeitos_destinos_page.png";
-import PetalasFlorAzul from "../../../assets/icone_flor_azul_encontre_perfeitos_destinos_page.png";
+import IconeAviaoAzulClaroRoxo from "../../../assets/icone_de_aviao_encontre_perfeitos_destinos_page.webp";
+import PetalasFlorAzul from "../../../assets/icone_flor_azul_encontre_perfeitos_destinos_page.webp";
 
 export default function EncontrePerfeitos() {
   return (

@@ -4,9 +4,9 @@ import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import DestinosPortugues from "../../../assets/destinos_imperdiveis_lingua_portuguesa.jpg";
-import LevarMala from "../../../assets/o_que_posso_levar_na_mala.jpg";
-import DocumentosNecessarios from "../../../assets/quais_documentos_preciso.png";
+import DestinosPortugues from "../../../assets/destinos_imperdiveis_lingua_portuguesa.webp";
+import LevarMala from "../../../assets/o_que_posso_levar_na_mala.webp";
+import DocumentosNecessarios from "../../../assets/quais_documentos_preciso.webp";
 
 function ImagensTopoDestinoPage() {
   const imagensCarrossel = [
