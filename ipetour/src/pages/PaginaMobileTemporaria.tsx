@@ -1,6 +1,6 @@
 import React from 'react';
 import './PaginaMobileTemporaria.css';
-import logoIpeTour from '../assets/logo_ipetour_operadora_icone_header.webp';
+import logoIpeTour from '../assets/logo_ipeturismo_centralizada.png';
 import ImagemViagemSemComplicacoesCasal from "../assets/imagem_turistas_sua_viagem_sem_complicacoes.webp";
 import InstagramIcon from "../assets/icone_instagram_footer.webp";
 import WhatsappIcon from "../assets/icone_whatsapp_footer.webp";
@@ -19,7 +19,7 @@ const PaginaMobileTemporaria: React.FC = () => {
   return (
 
     <div>
-      
+
       <header className="header_mobile">
           <img src={logoIpeTour} alt="Logo Ipe Turismo" />
       </header>

@@ -9,8 +9,8 @@
   background-color: #fff;
 
   & img{
-    width: 8rem;
-    height: 4rem;
+    width: 10rem;
+    height: 4.672rem;
     flex-shrink: 0;
   }
 }
